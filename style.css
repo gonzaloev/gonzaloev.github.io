@@ -1,25 +1,25 @@
 :root {
-  --greendark:#00714D;
-  --greenmed:#7FB8A7;
-  --greensoft:#C0D9CA;
-  --brown:#9B6E14;
-  --beige:#E0D5BB;
+  --greendark: #00714d;
+  --greenmed: #7fb8a7;
+  --greensoft: #c0d9ca;
+  --brown: #9b6e14;
+  --beige: #e0d5bb;
 }
 
-li>a{
+li > a {
   color: var(--brown) !important;
 }
 
-.navbar-nav{
+.navbar-nav {
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif, serif !important;
 }
 
-.text-beige{
+.text-beige {
   color: var(--beige) !important;
 }
 
-.bg-beige{
+.bg-beige {
   background-color: var(--beige);
 }
 
@@ -29,7 +29,7 @@ body {
   font-size: 12px;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -55,16 +55,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    255,
-    238,
-    86,
-    0.356
-  );  
-  z-index: -1;  
+  background-color: rgba(255, 238, 86, 0.356);
+  z-index: -1;
 }
 
-#inicio li{
+#inicio li {
   /* padding-left: 1em; */
   margin-left: 2em;
   font-size: 1.5rem;
@@ -240,47 +235,106 @@ body {
   margin: auto;
 }
 
-.text-fg-img{
+.text-fg-img {
   margin-top: 25%;
 }
-.text-fg-title{
+.text-fg-title {
   font-size: 55px;
 }
-.text-fg-desc{
+.text-fg-desc {
   font-size: 20px;
   width: 30rem;
 }
 
-#flag{
+#flag {
   width: 50px;
   margin: auto !important;
-  padding-right: .2rem;
-  padding-left: .2rem;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
 }
 
-.title{
+.title {
   font-family: Georgia, serif !important;
 }
 
-.active{
+.active {
   font-family: Georgia, serif !important;
   font-size: 1.3rem;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 425px)  {
+@media only screen and (min-width: 320px) and (max-width: 374px) {
   .box {
     margin: auto !important;
+    width: 15rem !important;
+  }
+  .navbar-toggler {
+    margin: auto;
+  }
+
+  .carousel-control-prev{
+    left:-2rem;
+  }
+  .carousel-control-next{
+    right:-2rem;
+  }
+  #boxes{
+    display: none;
   }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 425px)  {
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  #logoencabezado{
+    width: 275px !important;
+  }
   .box {
     margin: auto !important;
-    width: 21rem !important;
+  }
+  .navbar {
+    padding: 0 !important;
+  }
+  .carousel-item > .box{
+    width: 18.5rem !important;
+  }
+
+  .carousel-control-prev{
+    left:-2rem;
+  }
+  .carousel-control-next{
+    right:-2rem;
   }
 }
 
-@media only screen and (min-width: 1300px) and (max-width: 1920px)  {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #serviciosCarrousel{
+    display: none;
+  }
+ 
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1430px) {
+  .navbar-nav {
+    font-size: .6rem !important;
+  }
+  .active{
+    font-size: .8rem !important;
+  }
+  #flags{
+    margin-left: 15rem;
+  }
+  #flag {
+    width: 2rem;
+  }
+  .logo-footer {
+    width: 70%;
+  }
+  #serviciosCarrousel{
+    display: none;
+  }
+  .box-hide{
+    display: unset !important;
+  }
+}
+/* @media only screen and (min-width: 1300px) and (max-width: 1920px)  {
   li > a{
     font-size: 1rem !important;
   }
@@ -288,16 +342,25 @@ body {
   #flags{
     margin-left: 22rem !important;
   }
-}
+} */
 
-
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
   .logo-footer {
     width: 70%;
   }
+} */
+
+@media only screen and (min-width: 1440px) {
+  #flags{
+    margin-left: 25rem;
+  }
+
+  #serviciosCarrousel{
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
   .box-hide {
     display: none !important;
   }
@@ -307,22 +370,22 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  #logoencabezado{
+  #logoencabezado {
     width: 18rem;
   }
 
-  #flag{
+  #flag {
     width: 30px;
   }
-  
-  .text-fg-title{
+
+  .text-fg-title {
     margin: auto;
     text-align: center;
     padding-bottom: 2rem;
     font-size: 35px;
   }
 
-  .text-fg-desc{
+  .text-fg-desc {
     width: 80%;
     font-size: 25px;
     font-weight: 100;
@@ -345,20 +408,18 @@ body {
     margin: auto;
   }
 
-  .paddingx-sm{
-   padding-right: 2rem;
-   padding-left: 2rem;
+  .paddingx-sm {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
-  #servicios div{
+  #servicios div {
     margin-bottom: 5px !important;
   }
 
-  .text-fg-img{
+  .text-fg-img {
     margin-top: 65%;
   }
-
-
 
   /* .box-content{
     margin-top: 0 !important;
