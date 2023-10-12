@@ -42,7 +42,7 @@ body {
 
 #servicios {
   position: relative;
-  background-image: url("/img.jpg");
+  background-image: url("/images/servicios.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed;  */
@@ -301,6 +301,31 @@ body {
   }
   .carousel-control-next{
     right:-2rem;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 770px) {
+  #logoencabezado{
+    width: 275px !important;
+  }
+  .box-content{
+    margin-top: 10px;
+  }
+  .box {
+    margin: auto !important;
+  }
+  .navbar {
+    padding: 0 !important;
+  }
+  .carousel-item > .box{
+    width: 18.5rem !important;
+  }
+
+  .carousel-control-prev{
+    left:-0.5rem;
+  }
+  .carousel-control-next{
+    right:-0.5rem;
   }
 }
 

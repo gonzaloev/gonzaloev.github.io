@@ -17,7 +17,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 // Crea un marcador en la ubicación
 L.marker([40.7128, -74.006])
   .addTo(mapa)
-  .bindPopup("Mi Ubicación") // Título del marcador (puedes cambiarlo)
+  .bindPopup("Escribanía Verónica Céspedes") // Título del marcador (puedes cambiarlo)
   .openPopup();
 
 // Define la función toggleMenu
